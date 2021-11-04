@@ -1,0 +1,11 @@
+{% extends 'LoginSystem/login.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class='content-section'>
+        <h3>You've Logged Out Successfully</h3>
+            <div class='form-group'>
+                <a href='{% url 'login' %}'><button class='btn btn-outline-info' type='submit'>Login</button></a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
